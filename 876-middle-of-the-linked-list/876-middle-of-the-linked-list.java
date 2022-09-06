@@ -11,7 +11,7 @@
 class Solution {
     public ListNode middleNode(ListNode head) {
         ListNode mid = head;
-         ListNode fast = head;
+        ListNode fast = head;
         int step = 0;
         while (fast != null) {
             if (step % 2 == 0) {
