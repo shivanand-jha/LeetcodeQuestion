@@ -13,9 +13,9 @@ class Solution {
         {
             dp[0][i]=i;
         }
-        for(int i=1; i<=m; i++)
+        for(int i=1; i<m+1; i++)
         {
-            for(int j=1; j<=n; j++)
+            for(int j=1; j<n+1; j++)
             {
                 if(c1[i-1]==c2[j-1])
                 {
