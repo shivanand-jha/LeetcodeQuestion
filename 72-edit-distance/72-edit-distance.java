@@ -13,7 +13,7 @@ class Solution {
         {
             dp[0][i]=i;
         }
-        for(int i=1; i<m+1; i++)
+        for(int i=1; i<=m; i++)
         {
             for(int j=1; j<=n; j++)
             {
