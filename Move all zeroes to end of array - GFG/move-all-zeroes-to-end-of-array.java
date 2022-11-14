@@ -35,20 +35,18 @@ public class Main {
 class Solution {
     void pushZerosToEnd(int[] arr, int n) {
         // code here
-        int[] a = new int[n];
         int j=0;
-        for(int i=0; i<n; i++)
-        {
-            if(arr[i]!=0)
-              {
-                    a[j]=arr[i]; 
-                    j++;
-               }
+        int i=0;
+        while(j<n)
+              { 
+                  if(arr[j]!=0)
+                  {
+                      int temp= arr[i];
+                      arr[i] = arr[j];
+                      arr[j] = temp;
+                      i++;
+                  }
+                  j++;
         }
-        for(int i=0; i<n; i++)
-        {
-            arr[i]=a[i];
-        }
-        
     }
 }
