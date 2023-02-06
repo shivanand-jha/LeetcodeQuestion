@@ -5,8 +5,7 @@ class Solution {
         for(int i=0; i<n; i++)
         {
             arr[j]=nums[i];
-            j++;
-            arr[j]=nums[i+n];
+            arr[++j]=nums[i+n];
             j++;
         }
         return arr;
