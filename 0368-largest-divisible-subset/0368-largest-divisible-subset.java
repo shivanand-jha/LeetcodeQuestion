@@ -7,9 +7,10 @@ class Solution {
         }
         Arrays.sort(nums);
         List<List<Integer>> dp = new ArrayList<>();
-        for(int n:nums) {dp.add(new ArrayList<Integer>());}
+        // for(int n:nums) {dp.add(new ArrayList<Integer>());}
         for(int i=0; i<nums.length; i++)
         {
+            dp.add(new ArrayList<Integer>());
             List<Integer> max = new ArrayList<>();
             for(int j=0; j<i; j++)
             {
