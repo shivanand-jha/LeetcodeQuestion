@@ -5,17 +5,8 @@ class Solution {
         int c = 0;
         for(int i=0; i<nums.length; i++)
         {
-            if(c==0)
-            {
-                temp  = nums[i];
-            }
-            if(temp == nums[i])
-            {
-                c++;
-            }
-            else{
-                c--;
-            }
+            if(c==0) temp = nums[i];
+            c += temp == nums[i] ? 1 : -1;
         }
         return temp;
     }
